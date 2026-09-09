@@ -53,7 +53,7 @@ function citationViews(input: IntentPipelineInput): ProviderCitationView[] {
 
 function analysisPrompt(input: IntentPipelineInput): string {
   return [
-    "You are NiubiGEO's intent result layer for one completed provider answer.",
+    "You are GEO Audit's intent result layer for one completed provider answer.",
     "Return only one valid JSON object. Do not wrap it in markdown.",
     "All conclusions must be grounded in the actual AI answer or supplied provider citations.",
     "This product assesses only questions directly related to the supplied target brand and its product or service.",

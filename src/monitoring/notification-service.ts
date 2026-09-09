@@ -36,9 +36,9 @@ function eventTitle(project: MonitoringProject, condition: MonitoringNotificatio
 function eventMessage(event: MonitoringEvent, task: MonitoringTask, project: MonitoringProject): string {
   const language = project.defaultLanguage.toLocaleLowerCase().split("-")[0];
   if (language === "zh") {
-    return `任务：${task.name}\n事件数量：${event.occurrenceCount}\n问题：${event.promptIds.length}\n模型：${event.models.join(", ") || "无"}\n请在 NiubiGEO 工作台查看对应问题和原始回答。`;
+    return `任务：${task.name}\n事件数量：${event.occurrenceCount}\n问题：${event.promptIds.length}\n模型：${event.models.join(", ") || "无"}\n请在 GEO Audit 工作台查看对应问题和原始回答。`;
   }
-  return `Task: ${task.name}\nOccurrences: ${event.occurrenceCount}\nQuestions: ${event.promptIds.length}\nModels: ${event.models.join(", ") || "none"}\nOpen the NiubiGEO workspace to inspect the questions and original answers.`;
+  return `Task: ${task.name}\nOccurrences: ${event.occurrenceCount}\nQuestions: ${event.promptIds.length}\nModels: ${event.models.join(", ") || "none"}\nOpen the GEO Audit workspace to inspect the questions and original answers.`;
 }
 
 export class NotificationService implements MonitoringEventProcessor {

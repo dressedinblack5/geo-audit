@@ -172,7 +172,7 @@ export class ProviderCatalog {
         endpoint: "https://openrouter.ai/api/v1/chat/completions",
         extraHeaders: {
           "HTTP-Referer": "http://localhost",
-          "X-Title": "niubigeo OSS",
+          "X-Title": "geo-audit",
           "X-OpenRouter-Metadata": "enabled",
         },
         citationExtractor: (raw) => dedupeCitations([...extractAnnotationCitations(raw), ...extractPerplexityCitations(raw)]),

@@ -21,12 +21,12 @@
 <p align="center">
   <strong><a href="https://github.com/dressedinblack5/geo-audit">GitHub</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="#quick-start">Quick start</a> · <a href="#cases">20 real cases</a> · <a href="https://github.com/dressedinblack5/geo-audit/releases">Releases</a> · <a href="https://github.com/dressedinblack5/geo-audit/pkgs/container/geo-audit">Packages</a> · <a href="#docs">Docs</a></strong>
   <br>
-  <a href="#features">Features</a> · <a href="#how-to">How to use it</a> · <a href="#monitoring">Monitoring</a> · <a href="#niubigeo-vs-commercial-ai-visibility-tools">Compare tools</a> · <a href="#why">Why NiubiGEO</a> · <a href="#sponsors">Sponsors</a>
+  <a href="#features">Features</a> · <a href="#how-to">How to use it</a> · <a href="#monitoring">Monitoring</a> · <a href="#niubigeo-vs-commercial-ai-visibility-tools">Compare tools</a> · <a href="#why">Why GEO Audit</a> · <a href="#sponsors">Sponsors</a>
 </p>
 
 You have built a product, written the docs and worked to get the word out. When people ask AI for tools, does your product make it into the answer?
 
-**NiubiGEO is an open-source tool for tracking brand visibility and competitors in AI answers.** Start with a domain to see how different models describe your product and which competitors they name. Then test keywords to find out who appears in the answers. Open any result to inspect the original response and returned sources.
+**GEO Audit is an open-source tool for tracking brand visibility and competitors in AI answers.** Start with a domain to see how different models describe your product and which competitors they name. Then test keywords to find out who appears in the answers. Open any result to inspect the original response and returned sources.
 
 > **Open the GEO reporting black box. Put evidence in your hands.**
 
@@ -90,7 +90,7 @@ Start with one model, then add more once you know what to look for. Reading the 
 
 ## From one answer to ongoing observation
 
-| What you want to do | What NiubiGEO provides |
+| What you want to do | What GEO Audit provides |
 | :--- | :--- |
 | **Manage several products** | Each domain has its own project, configuration, runs and evidence. Switch projects without mixing products into one report. |
 | **Compare models** | Search, filter and select OpenRouter models. Inspect each model’s answer, result and errors, and retry a failed model separately. |
@@ -155,7 +155,7 @@ This reveals which answers named an actual product and which only explained a co
 
 ### PostHog · Follow a source back to the answer
 
-In the **Feature Flags** test for PostHog, model responses returned citations to pages including a Splunk blog post. NiubiGEO stores these separately from ordinary URLs in the answer text.
+In the **Feature Flags** test for PostHog, model responses returned citations to pages including a Splunk blog post. GEO Audit stores these separately from ordinary URLs in the answer text.
 
 Follow a source to the corresponding answer and check where it appeared. A citation helps you inspect the response; it does not, by itself, explain why a model recommended something.
 
@@ -175,7 +175,7 @@ The collection covers **20 real domains**, each with at least one analyzable dom
 
 ## Which AI visibility tool fits your team?
 
-**Choose NiubiGEO** when you want free access to the source, self-hosting, model choice with your own API key, and domain and keyword tests that you can trace back to the original evidence. You cover model, search and hosting costs.
+**Choose GEO Audit** when you want free access to the source, self-hosting, model choice with your own API key, and domain and keyword tests that you can trace back to the original evidence. You cover model, search and hosting costs.
 
 **Consider a commercial platform** when hosted services, marketing workflows or an existing search dataset matter more to you. The priorities below offer a starting point.
 
@@ -193,13 +193,13 @@ The collection covers **20 real domains**, each with at least one analyzable dom
 
 <a id="why"></a>
 
-## Why we built NiubiGEO
+## Why we built GEO Audit
 
 Product teams need more than a score. We want to know whether our product is being seen, where it is misunderstood, why a competitor appears in an answer and what to investigate next.
 
 Without the original answers, sources and test conditions, it is hard to know which findings to trust or where to spend your time and budget.
 
-NiubiGEO makes those questions easier to investigate: read different models’ answers, spot differences in descriptions and keywords, check the sources and keep observing. Where the evidence is missing, the result stays uncertain. Failed runs stay on record, too.
+GEO Audit makes those questions easier to investigate: read different models’ answers, spot differences in descriptions and keywords, check the sources and keep observing. Where the evidence is missing, the result stays uncertain. Failed runs stay on record, too.
 
 ### Where we want to go
 
@@ -207,7 +207,7 @@ Give developers, small teams and brands a way to check for themselves how AI des
 
 An inaccurate description can point you back to your website or docs. Different keywords associated with competitors may reveal something worth investigating. After changing your content, you can test again and observe subsequent answers.
 
-We want NiubiGEO to help you find questions worth acting on and keep a record you can revisit. Publishing an article does not guarantee an AI recommendation, and one answer is not a permanent ranking.
+We want GEO Audit to help you find questions worth acting on and keep a record you can revisit. Publishing an article does not guarantee an AI recommendation, and one answer is not a permanent ranking.
 
 <a id="community"></a>
 
@@ -221,7 +221,7 @@ To contribute code, report an issue or join the discussion, open an [Issue](http
 
 ## Sponsors
 
-Thank you to the sponsors supporting NiubiGEO’s open-source development.
+Thank you to the sponsors supporting GEO Audit’s open-source development.
 
 <p align="center">
   <a href="https://www.niubistar.com/"><strong>NiubiStar</strong></a>
@@ -241,4 +241,4 @@ Thank you to the sponsors supporting NiubiGEO’s open-source development.
 
 ---
 
-NiubiGEO observes Provider API responses, not results from consumer chat interfaces. Offline and web-enabled tests should be interpreted separately. Traditional search-engine rank tracking is not included.
+GEO Audit observes Provider API responses, not results from consumer chat interfaces. Offline and web-enabled tests should be interpreted separately. Traditional search-engine rank tracking is not included.

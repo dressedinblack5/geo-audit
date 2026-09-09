@@ -1,11 +1,11 @@
-export const PRODUCT_NAME = "niubigeo";
-export const PRODUCT_TITLE = "niubigeo OSS";
+export const PRODUCT_NAME = "geo-audit";
+export const PRODUCT_TITLE = "GEO Audit";
 export const NIUBIGEO_LOCKUP_ASSET = "/assets/brand/niubigeo-lockup.svg";
 
 export function renderNiubigeoMarkSvg(className = "niubigeo-mark"): string {
-  return `<svg class="${className}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 642 642" role="img" aria-label="NiubiGEO">
-    <title>NiubiGEO</title>
-    <desc>NiubiGEO emblem</desc>
+  return `<svg class="${className}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 642 642" role="img" aria-label="GEO Audit">
+    <title>GEO Audit</title>
+    <desc>GEO Audit emblem</desc>
     <g fill="#fff">
       <path d="M 170.50 63.95 C 247.29 60.67 310.23 123.86 307.10 200.50 L 307.10 229.30 C 283.22 228.76 264.48 233.11 241.60 241.60 L 241.60 206.50 C 241.88 167.32 210.25 133.45 170.50 134.30 C 130.70 134.03 98.58 167.27 97.55 206.50 L 97.55 290.75 L 31.95 290.75 L 31.95 202.50 C 30.42 125.88 95.35 65.09 170.50 63.95 Z"/>
       <path d="M 349.95 16.95 L 415.10 16.95 L 415.20 192.50 C 415.69 233.25 445.15 272.91 488.50 272.20 C 520.58 272.48 547.94 246.93 547.95 214.50 C 547.44 182.62 521.24 157.34 489.50 157.20 C 468.91 157.13 450.69 164.44 434.30 177.80 L 434.30 108.40 C 453.60 99.37 471.82 94.04 492.50 93.10 C 562.85 90.26 614.69 145.49 614.90 214.50 C 615.38 282.22 563.08 337.97 494.50 337.00 C 420.75 337.23 354.35 263.70 349.95 192.50 L 349.95 16.95 Z"/>
@@ -17,5 +17,5 @@ export function renderNiubigeoMarkSvg(className = "niubigeo-mark"): string {
 }
 
 export function renderNiubigeoLockup(className = "niubigeo-lockup"): string {
-  return `<img class="${className}" src="${NIUBIGEO_LOCKUP_ASSET}" alt="NiubiGEO" width="1048" height="256">`;
+  return `<img class="${className}" src="${NIUBIGEO_LOCKUP_ASSET}" alt="GEO Audit" width="1048" height="256">`;
 }

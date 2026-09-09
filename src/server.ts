@@ -970,6 +970,6 @@ const entrypoint = process.argv[1] ? pathToFileURL(process.argv[1]).href : "";
 if (import.meta.url === entrypoint) {
   const port = Number(process.env.PORT || 8787);
   createProductServer().listen(port, () => {
-    console.log(`niubigeo OSS server listening on http://localhost:${port}`);
+    console.log(`geo-audit server listening on http://localhost:${port}`);
   });
 }

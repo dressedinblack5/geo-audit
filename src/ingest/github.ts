@@ -20,7 +20,7 @@ function asObject(value: unknown): Record<string, unknown> | null {
 export async function fetchGithubMetadata(repoUrlOrSlug: string): Promise<GithubProjectMetadata> {
   const repo = githubRepoSlug(repoUrlOrSlug);
   if (!repo) throw new Error(`Invalid GitHub repository: ${repoUrlOrSlug}`);
-  const headers = { Accept: "application/vnd.github+json", "User-Agent": "niubigeo-oss" };
+  const headers = { Accept: "application/vnd.github+json", "User-Agent": "geo-audit" };
   const repoResponse = await fetch(`https://api.github.com/repos/${repo}`, { headers });
   if (!repoResponse.ok) throw new Error(`GitHub metadata request failed with HTTP ${repoResponse.status}`);
   const data = asObject(await repoResponse.json());

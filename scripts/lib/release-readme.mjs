@@ -1,4 +1,4 @@
-const repository = 'https://github.com/Albert-Weasker/niubigeo';
+const repository = 'https://github.com/dressedinblack5/geo-audit';
 const version = 'v0.2.0';
 
 function headerNavigation(zh, caseCount) {
@@ -8,7 +8,7 @@ function headerNavigation(zh, caseCount) {
     ['#quick-start', '快速开始', 'Quick start'],
     ['#cases', `${caseCount} 组真实案例`, `${caseCount} real cases`],
     [`${repository}/releases`, '发布版本', 'Releases'],
-    [`${repository}/pkgs/container/niubigeo`, '容器镜像', 'Packages'],
+    [`${repository}/pkgs/container/geo-audit`, '容器镜像', 'Packages'],
     ['#docs', '文档', 'Docs'],
   ];
   const secondary = [
@@ -16,7 +16,7 @@ function headerNavigation(zh, caseCount) {
     ['#how-to', '使用流程', 'How to use it'],
     ['#monitoring', '持续监测', 'Monitoring'],
     ['#niubigeo-vs-commercial-ai-visibility-tools', '工具对比', 'Compare tools'],
-    ['#why', '为什么做', 'Why NiubiGEO'],
+    ['#why', '为什么做', 'Why GEO Audit'],
     ['#sponsors', '赞助商', 'Sponsors'],
   ];
   const render = links => links.map(([href, chinese, english]) => `<a href="${href}">${zh ? chinese : english}</a>`).join(' · ');
@@ -34,12 +34,12 @@ export function releaseReadme(zh, coverage) {
     '  <picture>',
     '    <source media="(prefers-color-scheme: dark)" srcset="assets/brand/niubigeo-lockup.svg">',
     '    <source media="(prefers-color-scheme: light)" srcset="assets/brand/niubigeo-lockup-light.svg">',
-    '    <img src="assets/brand/niubigeo-lockup-light.svg" width="336" alt="NiubiGEO">',
+    '    <img src="assets/brand/niubigeo-lockup-light.svg" width="336" alt="GEO Audit">',
     '  </picture>',
     '</p>',
     '',
     '<p align="center">',
-    `  <a href="${release}"><img src="assets/readme/version.svg" alt="NiubiGEO ${version}" width="172" height="28"></a>`,
+    `  <a href="${release}"><img src="assets/readme/version.svg" alt="GEO Audit ${version}" width="172" height="28"></a>`,
     '  <a href="LICENSE"><img src="assets/readme/license.svg" alt="Apache-2.0" width="172" height="28"></a>',
     '  <a href="docs/deployment/docker.md"><img src="assets/readme/self-hosted.svg" alt="Self-hosted" width="132" height="28"></a>',
     '</p>',
@@ -57,8 +57,8 @@ export function releaseReadme(zh, coverage) {
       : 'You have built a product, written the docs and worked to get the word out. When people ask AI for tools, does your product make it into the answer?',
     '',
     zh
-      ? '**NiubiGEO 是一个开源的 AI 品牌可见度与竞争观察工具。** 从一个域名开始，查看不同模型如何描述你、提到哪些竞争对象，再通过关键词测试观察回答里出现了谁。点开结果，就能查看原始回答和返回的来源。'
-      : '**NiubiGEO is an open-source tool for tracking brand visibility and competitors in AI answers.** Start with a domain to see how different models describe your product and which competitors they name. Then test keywords to find out who appears in the answers. Open any result to inspect the original response and returned sources.',
+      ? '**GEO Audit 是一个开源的 AI 品牌可见度与竞争观察工具。** 从一个域名开始，查看不同模型如何描述你、提到哪些竞争对象，再通过关键词测试观察回答里出现了谁。点开结果，就能查看原始回答和返回的来源。'
+      : '**GEO Audit is an open-source tool for tracking brand visibility and competitors in AI answers.** Start with a domain to see how different models describe your product and which competitors they name. Then test keywords to find out who appears in the answers. Open any result to inspect the original response and returned sources.',
     '',
     zh ? '> **打破 GEO 报告黑盒，把证据交还给用户。**' : '> **Open the GEO reporting black box. Put evidence in your hands.**',
     '',
@@ -93,7 +93,7 @@ export function releaseReadme(zh, coverage) {
     '',
     '```bash',
     `git clone --branch ${version} --depth 1 ${repository}.git`,
-    'cd niubigeo',
+    'cd geo-audit',
     'npm ci',
     'cp .env.example .env',
     '```',
@@ -128,7 +128,7 @@ export function releaseReadme(zh, coverage) {
     '',
     `## ${zh ? '从一次回答，到持续观察' : 'From one answer to ongoing observation'}`,
     '',
-    zh ? '| 你想做什么 | NiubiGEO 提供什么 |' : '| What you want to do | What NiubiGEO provides |',
+    zh ? '| 你想做什么 | GEO Audit 提供什么 |' : '| What you want to do | What GEO Audit provides |',
     '| :--- | :--- |',
     zh
       ? '| **管理多个产品** | 每个域名有独立项目、配置、运行记录和证据。切换项目查看，不把不同产品混在一份报告里。 |\n| **对照多个模型** | 搜索、筛选并选择 OpenRouter 模型；分别查看回答、结果和错误，失败模型可以单独重试。 |\n| **自己决定是否联网** | 每个模型单独选择不联网或其支持的 Provider 原生联网方式，结果保留实际执行条件。 |\n| **看清品牌与竞争对象** | 并排查看模型描述的业务、类别、竞争对象，以及分别关联给它们的关键词。 |\n| **测试没点名品牌时出现了谁** | 确认关键词后执行不包含目标品牌名的关键词测试，查看实际提及、推荐及原文。 |\n| **检查每条结果的证据** | 原始回答、原文位置、Provider Citation、正文普通 URL 分别展示，失败与无法确认的记录保留。 |\n| **积累后续观察** | 保存待测范围，重复测量或设置定时任务；从历史记录与数据点回到组成结果的回答。 |'
@@ -207,8 +207,8 @@ export function releaseReadme(zh, coverage) {
     `### ${zh ? 'PostHog · 一个来源链接，可以查到哪里？' : 'PostHog · Follow a source back to the answer'}`,
     '',
     zh
-      ? '在 PostHog 案例的 **Feature Flags** 测试中，模型响应返回了指向 Splunk 博客等页面的引用。NiubiGEO 将这些引用与回答正文里普通出现的网址分开保存。'
-      : 'In the **Feature Flags** test for PostHog, model responses returned citations to pages including a Splunk blog post. NiubiGEO stores these separately from ordinary URLs in the answer text.',
+      ? '在 PostHog 案例的 **Feature Flags** 测试中，模型响应返回了指向 Splunk 博客等页面的引用。GEO Audit 将这些引用与回答正文里普通出现的网址分开保存。'
+      : 'In the **Feature Flags** test for PostHog, model responses returned citations to pages including a Splunk blog post. GEO Audit stores these separately from ordinary URLs in the answer text.',
     '',
     zh
       ? '你可以从来源打开对应回答，核对它出现在哪里。引用能帮助检查这次回答，但不能单凭一个链接断定它导致了模型推荐。'
@@ -232,11 +232,11 @@ export function releaseReadme(zh, coverage) {
     '',
     '<a id="niubigeo-vs-commercial-ai-visibility-tools"></a>',
     '',
-    `## ${zh ? 'NiubiGEO 与商业 AI 可见度工具，怎么选？' : 'Which AI visibility tool fits your team?'}`,
+    `## ${zh ? 'GEO Audit 与商业 AI 可见度工具，怎么选？' : 'Which AI visibility tool fits your team?'}`,
     '',
     zh
-      ? '**选择 NiubiGEO：** 你希望免费获取源码、自行部署、使用自己的 Key 选择模型，并从域名认知和关键词测试回到原始证据。模型、搜索和部署费用由你承担。'
-      : '**Choose NiubiGEO** when you want free access to the source, self-hosting, model choice with your own API key, and domain and keyword tests that you can trace back to the original evidence. You cover model, search and hosting costs.',
+      ? '**选择 GEO Audit：** 你希望免费获取源码、自行部署、使用自己的 Key 选择模型，并从域名认知和关键词测试回到原始证据。模型、搜索和部署费用由你承担。'
+      : '**Choose GEO Audit** when you want free access to the source, self-hosting, model choice with your own API key, and domain and keyword tests that you can trace back to the original evidence. You cover model, search and hosting costs.',
     '',
     zh
       ? '**考虑商业平台：** 如果你更需要托管服务、营销工作流或现成的搜索数据，可以按下面的侧重点了解各产品。'
@@ -254,7 +254,7 @@ export function releaseReadme(zh, coverage) {
     '',
     '<a id="why"></a>',
     '',
-    `## ${zh ? '为什么做 NiubiGEO？' : 'Why we built NiubiGEO'}`,
+    `## ${zh ? '为什么做 GEO Audit？' : 'Why we built GEO Audit'}`,
     '',
     zh
       ? '做产品的人，关心的不只是一个分数。我们想知道：自己的产品有没有被看见，哪里被理解错了，竞争对象为什么出现在这份回答里，以及下一步该检查什么。'
@@ -265,8 +265,8 @@ export function releaseReadme(zh, coverage) {
       : 'Without the original answers, sources and test conditions, it is hard to know which findings to trust or where to spend your time and budget.',
     '',
     zh
-      ? 'NiubiGEO 想让这件事变得具体：看到不同模型的回答，找到描述与关键词上的差异，打开来源核查，再继续观察。没有证据的地方，留下“无法确认”；失败的运行，也留下记录。'
-      : 'NiubiGEO makes those questions easier to investigate: read different models’ answers, spot differences in descriptions and keywords, check the sources and keep observing. Where the evidence is missing, the result stays uncertain. Failed runs stay on record, too.',
+      ? 'GEO Audit 想让这件事变得具体：看到不同模型的回答，找到描述与关键词上的差异，打开来源核查，再继续观察。没有证据的地方，留下“无法确认”；失败的运行，也留下记录。'
+      : 'GEO Audit makes those questions easier to investigate: read different models’ answers, spot differences in descriptions and keywords, check the sources and keep observing. Where the evidence is missing, the result stays uncertain. Failed runs stay on record, too.',
     '',
     `### ${zh ? '我们希望走向哪里' : 'Where we want to go'}`,
     '',
@@ -279,8 +279,8 @@ export function releaseReadme(zh, coverage) {
       : 'An inaccurate description can point you back to your website or docs. Different keywords associated with competitors may reveal something worth investigating. After changing your content, you can test again and observe subsequent answers.',
     '',
     zh
-      ? '我们希望 NiubiGEO 帮你找到值得行动的问题，并留下之后可以复查的记录。它不会承诺发一篇文章就能被 AI 推荐，也不会把一次回答当成永久排名。'
-      : 'We want NiubiGEO to help you find questions worth acting on and keep a record you can revisit. Publishing an article does not guarantee an AI recommendation, and one answer is not a permanent ranking.',
+      ? '我们希望 GEO Audit 帮你找到值得行动的问题，并留下之后可以复查的记录。它不会承诺发一篇文章就能被 AI 推荐，也不会把一次回答当成永久排名。'
+      : 'We want GEO Audit to help you find questions worth acting on and keep a record you can revisit. Publishing an article does not guarantee an AI recommendation, and one answer is not a permanent ranking.',
     '',
     '<a id="community"></a>',
     '',
@@ -294,23 +294,13 @@ export function releaseReadme(zh, coverage) {
       ? `想贡献代码、反馈问题，或加入讨论，直接提交 [Issue](${repository}/issues) 或 [Pull Request](${repository}/pulls) 即可。`
       : `To contribute code, report an issue or join the discussion, open an [Issue](${repository}/issues) or a [Pull Request](${repository}/pulls).`,
     '',
-    '<a id="sponsors"></a>',
-    '',
-    `## ${zh ? '赞助商' : 'Sponsors'}`,
-    '',
-    zh ? '感谢以下赞助商对 NiubiGEO 开源开发的支持。' : 'Thank you to the sponsors supporting NiubiGEO’s open-source development.',
-    '',
-    '<p align="center">',
-    '  <a href="https://www.niubistar.com/"><strong>NiubiStar</strong></a>',
-    '</p>',
-    '',
     '<a id="docs"></a>',
     '',
     `## ${zh ? '文档与项目入口' : 'Documentation and project links'}`,
     '',
     zh
-      ? `[项目仓库](${repository}) · [发布版本](${repository}/releases) · [容器镜像](${repository}/pkgs/container/niubigeo) · [问题反馈](${repository}/issues) · [参与开发](${repository}/pulls)`
-      : `[GitHub repository](${repository}) · [Releases](${repository}/releases) · [Container packages](${repository}/pkgs/container/niubigeo) · [Report an issue](${repository}/issues) · [Contribute code](${repository}/pulls)`,
+      ? `[项目仓库](${repository}) · [发布版本](${repository}/releases) · [容器镜像](${repository}/pkgs/container/geo-audit) · [问题反馈](${repository}/issues) · [参与开发](${repository}/pulls)`
+      : `[GitHub repository](${repository}) · [Releases](${repository}/releases) · [Container packages](${repository}/pkgs/container/geo-audit) · [Report an issue](${repository}/issues) · [Contribute code](${repository}/pulls)`,
     '',
     zh
       ? `- [工作原理](docs/how-it-works.md) · [架构说明](docs/ARCHITECTURE.md)\n- [测量方法](docs/measurement-methodology.md) · [来源与证据](docs/evidence-model.md)\n- [部署](docs/deployment/docker.md) · [备份与升级](docs/upgrade.md)\n- [已知问题](docs/known-issues.md) · [能力边界](docs/limitations.md) · [发布说明](${release})\n- [贡献指南](CONTRIBUTING.md) · [安全政策](SECURITY.md) · [许可证](LICENSE)`
@@ -319,8 +309,8 @@ export function releaseReadme(zh, coverage) {
     '---',
     '',
     zh
-      ? 'NiubiGEO 观察的是 Provider API 回答，不代表消费端聊天页面的结果；不联网与联网测试分开理解。目前不提供传统搜索引擎排名监测。'
-      : 'NiubiGEO observes Provider API responses, not results from consumer chat interfaces. Offline and web-enabled tests should be interpreted separately. Traditional search-engine rank tracking is not included.',
+      ? 'GEO Audit 观察的是 Provider API 回答，不代表消费端聊天页面的结果；不联网与联网测试分开理解。目前不提供传统搜索引擎排名监测。'
+      : 'GEO Audit observes Provider API responses, not results from consumer chat interfaces. Offline and web-enabled tests should be interpreted separately. Traditional search-engine rank tracking is not included.',
     '',
   ].join('\n');
 }

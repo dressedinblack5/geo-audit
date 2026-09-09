@@ -47,7 +47,7 @@ export function renderAppHtml(): string {
         ${navButton("09", "settings", "settings")}
       </nav>
 
-      <div class="sidebar-footer"><div class="health-line"><span>NiubiGEO OSS</span><span id="health" class="status info">...</span></div></div>
+      <div class="sidebar-footer"><div class="health-line"><span>${PRODUCT_TITLE}</span><span id="health" class="status info">...</span></div></div>
     </aside>
 
     <div class="workspace">
