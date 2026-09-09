@@ -168,7 +168,7 @@ export class PromptGenerator {
       prompt,
       model: input.model,
       apiKey: input.apiKey,
-      maxTokens: 1200,
+      maxTokens: 3000,
       temperature: 0.1,
       webSearchEnabled: false,
     });
