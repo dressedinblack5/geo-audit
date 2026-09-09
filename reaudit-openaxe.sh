@@ -1,7 +1,7 @@
 #!/bin/bash
 # Monthly GEO re-audit of openaxe. Logs to reaudit.log. Results land in runs/<timestamp>-openaxe/.
 export PATH=/usr/bin:/bin:/usr/local/bin
-cd /home/dressedinblack/Projects/niubigeo || exit 1
+cd /home/dressedinblack/Projects/geo-audit || exit 1
 /usr/bin/npx tsx src/cli.ts audit \
   --domain github.com \
   --github https://github.com/dressedinblack5/openaxe \
