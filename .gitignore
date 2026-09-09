@@ -16,4 +16,5 @@ NiubiGEO_README_zh-CN*.md
 docs/assets/demo-frames/
 .codex/
 .DS_Store
+*.log
 npm-debug.log*
