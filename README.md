@@ -7,17 +7,19 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Albert-Weasker/niubigeo/releases/tag/v0.2.0"><img src="assets/readme/version.svg" alt="NiubiGEO v0.2.0" width="172" height="28"></a>
+  <a href="https://github.com/dressedinblack5/geo-audit/releases/tag/v0.2.0"><img src="assets/readme/version.svg" alt="NiubiGEO v0.2.0" width="172" height="28"></a>
   <a href="LICENSE"><img src="assets/readme/license.svg" alt="Apache-2.0" width="172" height="28"></a>
   <a href="docs/deployment/docker.md"><img src="assets/readme/self-hosted.svg" alt="Self-hosted" width="132" height="28"></a>
 </p>
+
+> **GEO Audit** — hard fork of [NiubiGEO](https://github.com/Albert-Weasker/niubigeo) v0.2.0 (Apache-2.0). Upstream credit retained; see docs/releases/v0.2.0.md.
 
 # Does AI recommend your product? Who shows up instead?
 
 **Enter a domain. Compare how models describe your product, who they recommend, and which sources they cite.**
 
 <p align="center">
-  <strong><a href="https://github.com/Albert-Weasker/niubigeo">GitHub</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="#quick-start">Quick start</a> · <a href="#cases">20 real cases</a> · <a href="https://github.com/Albert-Weasker/niubigeo/releases">Releases</a> · <a href="https://github.com/Albert-Weasker/niubigeo/pkgs/container/niubigeo">Packages</a> · <a href="#docs">Docs</a></strong>
+  <strong><a href="https://github.com/dressedinblack5/geo-audit">GitHub</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="#quick-start">Quick start</a> · <a href="#cases">20 real cases</a> · <a href="https://github.com/dressedinblack5/geo-audit/releases">Releases</a> · <a href="https://github.com/dressedinblack5/geo-audit/pkgs/container/geo-audit">Packages</a> · <a href="#docs">Docs</a></strong>
   <br>
   <a href="#features">Features</a> · <a href="#how-to">How to use it</a> · <a href="#monitoring">Monitoring</a> · <a href="#niubigeo-vs-commercial-ai-visibility-tools">Compare tools</a> · <a href="#why">Why NiubiGEO</a> · <a href="#sponsors">Sponsors</a>
 </p>
@@ -56,8 +58,8 @@ You have built a product, written the docs and worked to get the word out. When 
 To test your own product, you will need Node.js 22+ and your own OpenRouter API key:
 
 ```bash
-git clone --branch v0.2.0 --depth 1 https://github.com/Albert-Weasker/niubigeo.git
-cd niubigeo
+git clone https://github.com/dressedinblack5/geo-audit.git
+cd geo-audit
 npm ci
 cp .env.example .env
 ```
@@ -213,7 +215,7 @@ We want NiubiGEO to help you find questions worth acting on and keep a record yo
 
 Community Edition is free, open source and self-hosted under **[Apache-2.0](LICENSE)**. Bring your own API key and pay for the models, search services and hosting you use.
 
-To contribute code, report an issue or join the discussion, open an [Issue](https://github.com/Albert-Weasker/niubigeo/issues) or a [Pull Request](https://github.com/Albert-Weasker/niubigeo/pulls).
+To contribute code, report an issue or join the discussion, open an [Issue](https://github.com/dressedinblack5/geo-audit/issues) or a [Pull Request](https://github.com/dressedinblack5/geo-audit/pulls).
 
 <a id="sponsors"></a>
 
@@ -229,12 +231,12 @@ Thank you to the sponsors supporting NiubiGEO’s open-source development.
 
 ## Documentation and project links
 
-[GitHub repository](https://github.com/Albert-Weasker/niubigeo) · [Releases](https://github.com/Albert-Weasker/niubigeo/releases) · [Container packages](https://github.com/Albert-Weasker/niubigeo/pkgs/container/niubigeo) · [Report an issue](https://github.com/Albert-Weasker/niubigeo/issues) · [Contribute code](https://github.com/Albert-Weasker/niubigeo/pulls)
+[GitHub repository](https://github.com/dressedinblack5/geo-audit) · [Releases](https://github.com/dressedinblack5/geo-audit/releases) · [Report an issue](https://github.com/dressedinblack5/geo-audit/issues) · [Contribute code](https://github.com/dressedinblack5/geo-audit/pulls)
 
 - [How it works](docs/how-it-works.md) · [Architecture](docs/ARCHITECTURE.md)
 - [Measurement methodology](docs/measurement-methodology.md) · [Sources and evidence](docs/evidence-model.md)
 - [Deployment](docs/deployment/docker.md) · [Backups and upgrades](docs/upgrade.md)
-- [Known issues](docs/known-issues.md) · [Limitations](docs/limitations.md) · [Release notes](https://github.com/Albert-Weasker/niubigeo/releases/tag/v0.2.0)
+- [Known issues](docs/known-issues.md) · [Limitations](docs/limitations.md) · [Upstream release notes](https://github.com/Albert-Weasker/niubigeo/releases/tag/v0.2.0)
 - [Contributing](CONTRIBUTING.md) · [Security policy](SECURITY.md) · [License](LICENSE)
 
 ---

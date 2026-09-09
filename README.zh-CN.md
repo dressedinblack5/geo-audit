@@ -7,17 +7,19 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Albert-Weasker/niubigeo/releases/tag/v0.2.0"><img src="assets/readme/version.svg" alt="NiubiGEO v0.2.0" width="172" height="28"></a>
+  <a href="https://github.com/dressedinblack5/geo-audit/releases/tag/v0.2.0"><img src="assets/readme/version.svg" alt="NiubiGEO v0.2.0" width="172" height="28"></a>
   <a href="LICENSE"><img src="assets/readme/license.svg" alt="Apache-2.0" width="172" height="28"></a>
   <a href="docs/deployment/docker.md"><img src="assets/readme/self-hosted.svg" alt="Self-hosted" width="132" height="28"></a>
 </p>
+
+> **GEO Audit** — [NiubiGEO](https://github.com/Albert-Weasker/niubigeo) v0.2.0 的硬分叉（Apache-2.0）。上游归属保留，见 docs/releases/v0.2.0.md。
 
 # AI 会推荐你的产品吗？谁出现在答案里？
 
 **输入域名，对照不同模型的产品描述、推荐对象和引用来源。**
 
 <p align="center">
-  <strong><a href="https://github.com/Albert-Weasker/niubigeo">项目仓库</a> · <a href="README.md">English</a> · <a href="#quick-start">快速开始</a> · <a href="#cases">20 组真实案例</a> · <a href="https://github.com/Albert-Weasker/niubigeo/releases">发布版本</a> · <a href="https://github.com/Albert-Weasker/niubigeo/pkgs/container/niubigeo">容器镜像</a> · <a href="#docs">文档</a></strong>
+  <strong><a href="https://github.com/dressedinblack5/geo-audit">项目仓库</a> · <a href="README.md">English</a> · <a href="#quick-start">快速开始</a> · <a href="#cases">20 组真实案例</a> · <a href="https://github.com/dressedinblack5/geo-audit/releases">发布版本</a> · <a href="https://github.com/dressedinblack5/geo-audit/pkgs/container/niubigeo">容器镜像</a> · <a href="#docs">文档</a></strong>
   <br>
   <a href="#features">功能一览</a> · <a href="#how-to">使用流程</a> · <a href="#monitoring">持续监测</a> · <a href="#niubigeo-vs-commercial-ai-visibility-tools">工具对比</a> · <a href="#why">为什么做</a> · <a href="#sponsors">赞助商</a>
 </p>
@@ -56,8 +58,8 @@
 想测试自己的产品，准备 Node.js 22+ 和自己的 OpenRouter API Key：
 
 ```bash
-git clone --branch v0.2.0 --depth 1 https://github.com/Albert-Weasker/niubigeo.git
-cd niubigeo
+git clone https://github.com/dressedinblack5/geo-audit.git
+cd geo-audit
 npm ci
 cp .env.example .env
 ```
@@ -213,7 +215,7 @@ NiubiGEO 想让这件事变得具体：看到不同模型的回答，找到描�
 
 Community Edition 使用 **[Apache-2.0](LICENSE)** 许可证，免费开源、支持自托管。你使用自己的 API Key，自行承担模型、搜索服务和部署成本。
 
-想贡献代码、反馈问题，或加入讨论，直接提交 [Issue](https://github.com/Albert-Weasker/niubigeo/issues) 或 [Pull Request](https://github.com/Albert-Weasker/niubigeo/pulls) 即可。
+想贡献代码、反馈问题，或加入讨论，直接提交 [Issue](https://github.com/dressedinblack5/geo-audit/issues) 或 [Pull Request](https://github.com/dressedinblack5/geo-audit/pulls) 即可。
 
 <a id="sponsors"></a>
 
@@ -229,12 +231,12 @@ Community Edition 使用 **[Apache-2.0](LICENSE)** 许可证，免费开源、�
 
 ## 文档与项目入口
 
-[项目仓库](https://github.com/Albert-Weasker/niubigeo) · [发布版本](https://github.com/Albert-Weasker/niubigeo/releases) · [容器镜像](https://github.com/Albert-Weasker/niubigeo/pkgs/container/niubigeo) · [问题反馈](https://github.com/Albert-Weasker/niubigeo/issues) · [参与开发](https://github.com/Albert-Weasker/niubigeo/pulls)
+[项目仓库](https://github.com/dressedinblack5/geo-audit) · [发布版本](https://github.com/dressedinblack5/geo-audit/releases) · [容器镜像](https://github.com/dressedinblack5/geo-audit/pkgs/container/niubigeo) · [问题反馈](https://github.com/dressedinblack5/geo-audit/issues) · [参与开发](https://github.com/dressedinblack5/geo-audit/pulls)
 
 - [工作原理](docs/how-it-works.md) · [架构说明](docs/ARCHITECTURE.md)
 - [测量方法](docs/measurement-methodology.md) · [来源与证据](docs/evidence-model.md)
 - [部署](docs/deployment/docker.md) · [备份与升级](docs/upgrade.md)
-- [已知问题](docs/known-issues.md) · [能力边界](docs/limitations.md) · [发布说明](https://github.com/Albert-Weasker/niubigeo/releases/tag/v0.2.0)
+- [已知问题](docs/known-issues.md) · [能力边界](docs/limitations.md) · [发布说明](https://github.com/dressedinblack5/geo-audit/releases/tag/v0.2.0)
 - [贡献指南](CONTRIBUTING.md) · [安全政策](SECURITY.md) · [许可证](LICENSE)
 
 ---

@@ -1,11 +1,11 @@
 {
-  "name": "niubigeo",
+  "name": "geo-audit",
   "version": "0.2.0",
   "private": true,
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Albert-Weasker/niubigeo.git"
+    "url": "https://github.com/dressedinblack5/geo-audit.git"
   },
   "type": "module",
   "scripts": {
